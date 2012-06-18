@@ -20,6 +20,13 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Dist-Zilla-Plugin-RemovePrereqsMatching
+no_index:
+  directory:
+    - corpus
+provides:
+  Dist::Zilla::Plugin::RemovePrereqsMatching:
+    file: lib/Dist/Zilla/Plugin/RemovePrereqsMatching.pm
+    version: 0.002
 requires:
   Dist::Zilla::Role::PrereqSource: 0
   Moose: 0
@@ -29,7 +36,7 @@ requires:
 resources:
   bugtracker: https://github.com/RsrchBoy/dist-zilla-plugin-removeprereqsmatching/issues
   repository: git://github.com/RsrchBoy/dist-zilla-plugin-removeprereqsmatching.git
-version: 0.001
+version: 0.002
 x_Dist_Zilla:
   plugins:
     -
@@ -224,6 +231,14 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::InstallRelease
       name: '@RSRCHBOY/InstallRelease'
       version: 0.008
+    -
+      class: Dist::Zilla::Plugin::MetaNoIndex
+      name: MetaNoIndex
+      version: 4.300018
+    -
+      class: Dist::Zilla::Plugin::MetaProvides::Package
+      name: MetaProvides::Package
+      version: 1.14000001
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':InstallModules'

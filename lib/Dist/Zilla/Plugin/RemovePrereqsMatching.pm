@@ -9,7 +9,7 @@
 #
 package Dist::Zilla::Plugin::RemovePrereqsMatching;
 {
-  $Dist::Zilla::Plugin::RemovePrereqsMatching::VERSION = '0.001';
+  $Dist::Zilla::Plugin::RemovePrereqsMatching::VERSION = '0.002';
 }
 
 # ABSTRACT: A more flexible prereq remover
@@ -85,7 +85,7 @@ Dist::Zilla::Plugin::RemovePrereqsMatching - A more flexible prereq remover
 
 =head1 VERSION
 
-This document describes version 0.001 of Dist::Zilla::Plugin::RemovePrereqsMatching - released June 18, 2012 as part of Dist-Zilla-Plugin-RemovePrereqsMatching.
+This document describes version 0.002 of Dist::Zilla::Plugin::RemovePrereqsMatching - released June 18, 2012 as part of Dist-Zilla-Plugin-RemovePrereqsMatching.
 
 =head1 SYNOPSIS
 
